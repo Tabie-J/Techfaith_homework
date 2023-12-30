@@ -1,0 +1,89 @@
+/*For the background picture*/
+body  {
+    background-image: url(https://images.unsplash.com/photo-1593900154763-1db4833d1784?q=80&w=3105&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-attachment: fixed;
+    display:flex;
+}
+/*Customize the little box that contain all of the thing*/
+.container{
+    font-family:'Times New Roman', Times, serif;
+    width: 80%;
+    background-color:rgb(56,124,68) ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+/*For the title*/
+h1 {
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 43px;
+    color:rgb(255,223,0);
+    text-align:center;
+}
+/*For the subtitle*/
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(207,181,59);
+    font-size:medium;
+    text-align: center;
+}
+h3 {
+    font-size:medium;
+    color:rgb(207,181,59);
+    text-align:center;
+}
+/*For the Nelson Mandela quote*/
+h5 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size:small;
+    text-align: center;
+}
+/*To take of the line of  Nelson Mandela link*/
+a {
+    text-decoration: none;
+}
+/*For when the cusor pass to change the background color*/
+a:hover {
+    background-color:rgb(255,215,115);
+}
+
+em {
+    color: rgb(13, 38, 2);
+}
+/*To customize the line*/
+hr {
+    height: 5px;
+    background-color:rgb(212, 175, 55) ;
+    border-radius: 20%;
+    border-color:rgb(207,181,59);
+}
+/*To change the size of pic number 1*/
+.kfood1 {
+    /*width: 500px;*/
+    max-width: 300px;
+    max-height: 300px;
+    padding-right: 370px;
+}
+/*Change the size of pic numeber 2*/
+.kfood2 {
+    /*width:500px;*/
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: 90px;
+}
+/*Change the size of pic number 3*/
+.kfood3 {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 150px; 
+    padding-right: 250px;
+}
+/*Change size pic number 4*/
+.kfood4 {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 100px;
+}

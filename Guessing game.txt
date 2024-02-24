@@ -1,0 +1,27 @@
+﻿Tech and Faith 
+Homework
+
+
+Guessing game
+
+
+myName='Tabitha'
+#Variable for the correct number
+correctNumber=20
+#to input the question
+input("What's your name")
+#the condition to make sure the user use something that is right
+if myName=="Tabitha":
+    #respond for when the person write the correct name
+    print("Hi " +myName+ " welcome back to the guessing game")
+  input('Please select a number')
+  elif correctNumber<20:
+          print("It is less go higher")
+          elif correctNumber>20:
+              print("It is higher go lower")
+              elif correctNumber==20:
+                  print("Yes that is correct")
+                  else:
+                      print("It is not in the system")
+                      
+#I send it like this because I used the website (even though it keeps not working most of the time) so I have to send it in this format.I will send it in a code format later.

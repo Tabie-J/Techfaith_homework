@@ -1,0 +1,14 @@
+myName=’Tabitha’
+correctHour==2200
+
+print(‘Welcome to the guessing game’)
+input(“What is your name?”)
+input(“Hi” +myName+ “Welcome back to the guessing game. Please select a hour”)
+if correctHour<2200:
+print(‘The hour that you chose is less please go higher’)
+elif correctHour>2200:
+print(‘The hour chosen is higher please go lower’)
+elif correctHour==2200:
+print(‘Great job. You won’)
+else:
+print(‘Maybe try another time’)

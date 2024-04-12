@@ -1,0 +1,22 @@
+Month = ['January','February','March','April','May','June','July','August','September','October','November','December']
+Week =[1,2,3,4]
+color =['Red','Black','Purple','Green']
+RightMonth = Month[1]
+RightWeek = Week[2]
+RightColor =4
+int(input("Hello! Please select a month"))
+if RightMonth:
+    print("You selected the right month you win")
+else:
+    print("Wrong Month try again")
+int(input("select a week"))
+if RightWeek:
+    print("you have selected the right week")
+else:
+    print("Wrong Week try again")
+if RightMonth:
+    if RightWeek:
+        if RightColor:
+            print("You win the game")
+        else:
+            print("You lose try again")

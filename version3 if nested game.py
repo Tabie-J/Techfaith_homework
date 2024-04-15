@@ -19,7 +19,7 @@ if guessmonth== RightMonth:
         guessweek= int(guessweek)
 #in case the user don't put a number so that you can let them know that it's invalid
     except ValueError: 
-        print("You enter a unvalid character please use a number")
+        print("You enter a invalid character please use a number")
         guessweek= None
 #to see if the week is right
 if guessweek== RightWeek:
@@ -28,6 +28,7 @@ if guessweek== RightWeek:
     guesscolor=input("Select the correct color ")
     if guesscolor== RightColor:
             print("That's the right color")
+#To check if sll the condition are respected
             if RightMonth:
                 if RightWeek:
                     if RightColor:

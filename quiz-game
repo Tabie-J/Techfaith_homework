@@ -1,0 +1,39 @@
+print("~ Welcome ~")
+#The quiz question
+Questions = {
+        1:{'What keyword do you use to define a function in Python?\n': 'a. Function\n b.Def\n c. Func\n d. Define\n'},
+        2:{'Which of these is used to print a message in Python?\n': 'a. Print\n b. Echo\n c. Output\n d. Show\n'},
+        3:{'What operator adds two numbers together?\n': 'a. +\n b. -\n c. *\n d. /\n'},
+        4:{'How do you start a for loop in Python?\n': 'a. for i in range(10):\n b. for(1=0;i<10;i++):\n c. loop over 10 times:\n d. repeat 10 times:\n'},
+        5:{'Which character is used to assign a value to a variable?\n': 'a. =\n b. ==\n c. :\n d. !=\n'},
+        6:{'What is the correct file extension for Python file?\n': 'a. .py\n b. .python\n c. .pyth\n d. .script\n'},
+        7:{'Which of these is a correct if statement in Python? \n':'a. if x>10\n b. if (x>10)\n c. if x>10:\n d. if x>10 then:\n'},
+        8:{'What symbol is used to start a new block of code in Python?\n': 'a. {\n b. [\n c. :\n d. (\n'},
+        9:{'Which function is used to find the maximum value in a list?\n': 'a. max()\n b. min()\n c. sum()\n d. avg()\n'},
+        10:{'Which method converts a string to uppercase?\n': 'a. upper()\n b. uppercase()\n c. toupper()\n d. up()\n'}}
+#the answer
+Answer={
+    (Questions[1],"a")
+    (Questions[2],"a")
+    (Questions[3],"a")
+    (Questions[4],"a")
+    (Questions[5],"a")
+    (Questions[6],"a")
+    (Questions[7],"c")
+    (Questions[8],"a")
+    (Questions[9],"a")
+    (Questions[10],"a")
+}
+correctanswer=0
+#Loop to go through the question
+for x,q_options in Questions.items():
+    print("Question",x)
+    for key in q_options:
+        print(key,q_options[key])
+#statement to make the person
+user=input("Choose the right answer")
+if user==Answer:
+    correctanswer+=1
+    print("That's correct")
+else:
+    print("That's wrong")

@@ -42,21 +42,22 @@ print("Date of Birth: ",user_profile["date of birth"])
 #print the phone number
 print("Phone number:",user_profile["telephone"])
 
+#ask if the user wants to login
 user_anwer = input("Do you want to attempt login")
-if user_anwer.lower() == "yes":
+if user_anwer.lower() == "yes": #make sure that the user said yes regardless of how he write the yes it's going to work
     print("")
 #input()
 #max_attempts = 3
-for attempt in range (3):
+for attempt in range (3): #loop for only 3 attempts
     username_input = input("Enter Username")
     password_input = input("Enter password")
-    if (username_input == user_profile["username"] and password_input == user_profile["password"]):
-        if user_profile["active_account"]:
-            print("You're logged in",user_profile["first name"])
-            break
+    if (username_input == user_profile["username"] and password_input == user_profile["password"]): #check that both username and password match
+        if user_profile["active_account"]:  #check if the account is active
+            print("You're logged in",user_profile["first name"]) #if it is active print this
+            break #stop the loop
         else:
             print("Username or password failed")
-            if attempt:
+            if attempt == 2: #if it's the last attempt print this
                 print("You have locked your account. Closing script")
             else:
-                print("Okay")
+                print("") #just here for nothing

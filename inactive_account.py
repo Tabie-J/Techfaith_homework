@@ -47,16 +47,17 @@ if user_anwer.lower() == "yes":
     print("")
 #input()
 #max_attempts = 3
+#loop for 3 attempts
 for attempt in range (3):
     username_input = input("Enter Username")
     password_input = input("Enter password")
-    if (username_input == user_profile["username"] and password_input == user_profile["password"]):
-        if user_profile["active_account"] == False:
+    if (username_input == user_profile["username"] and password_input == user_profile["password"]): #make sure username and password are correct
+        if user_profile["active_account"] == False: #check if it is active and print this
             print("Sorry your account is not active",user_profile["first name"])
             break
         else:
             print("Username or password failed")
-            if attempt == 2:
+            if attempt == 2: #after 3 attempts to print this
                 print("You have locked your account. Closing script")
             else:
-                print("Okay")
+                print("") #just here for nothing

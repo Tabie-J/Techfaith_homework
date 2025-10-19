@@ -1,0 +1,54 @@
+#empty dictionary
+user_profile = {}
+def get_user_info(user_profile):
+    """Collect user information and store it in the dictionary."""
+    user_profile["first name"] = input("Enter your first name: ")
+    user_profile["last name"] = input("Enter your last name: ")
+    user_profile["username"] = input("Enter your username: ")
+    user_profile["password"] = input("Enter your password: ")
+    user_profile["date of birth"] = input("Enter your date of birth (MM/DD/YYYY): ")
+    user_profile["telephone"] = input("Enter your phone number: ")
+    user_profile["active_account"] = True
+
+
+def print_user_profile(user_profile):
+    """Display the user's profile information."""
+    print("\n--- User Profile ---")
+    print("First name:", user_profile["first name"])
+    print("Last name:", user_profile["last name"])
+    print("Username:", user_profile["username"])
+    print("Password:", user_profile["password"])
+    print("Date of Birth:", user_profile["date of birth"])
+    print("Phone number:", user_profile["telephone"])
+
+
+def login(user_profile):
+    """Allow user up to 3 login attempts."""
+    user_answer = input("\nDo you want to attempt login? ")
+
+    if user_answer == "yes":
+        attempts = 0
+        while attempts < 3:
+            username_input = input("Enter username: ")
+            password_input = input("Enter password: ")
+
+            if (username_input == user_profile["username"] and
+                password_input == user_profile["password"]):
+                if user_profile["active_account"]:
+                    print("You're logged in,", user_profile["first name"])
+                    break
+            else:
+                print("Username or password incorrect.")
+                attempts += 1
+
+        if attempts == 3:
+            print("You have locked your account. Closing script.")
+            user_profile["active_account"] = False
+    else:
+        print("Login skipped.")
+
+
+# Run the program
+get_user_info(user_profile)
+print_user_profile(user_profile)
+login(user_profile)
